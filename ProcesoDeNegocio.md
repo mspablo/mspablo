@@ -1,3 +1,15 @@
+En esta actividad se pide que se realicen las siguientes tareas:  
+**✓ Definir cuatro KPI,definiendo con detalle la métrica que utiliza (es importante que pienses en indicadores que aportan valor a los procesos de negocio).**  
+Ejemplos (puedes utilizar otros):  
+ **Venta mensual por vendedor:** Este indicador aporta información acerca de las ventas de cada empleado.  
+ **Máximo vendedor por mes:** Este indicador aporta información acerca del vendedor que realizo el mayor número de ventas desgranado por mes.  
+**Producto más vendido,** productos para los cuales sacamos mayor rendimiento(PrecioCompra - PrecioVenta)  
+  **✓ Realizar las consultas (y subconsultas) que permitan obtener dicha información.**
+
+
+
+
+
 ## 1. En este KPI mostramos la ultima fecha de pedido que gestiono cada empleado:
 ```sql
 SELECT max(FechaPedido) as ultimoPedido,  /*Aqui seleccionamos la ultima(maxima) fecha de pedido*/
