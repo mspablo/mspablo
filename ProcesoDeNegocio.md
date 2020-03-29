@@ -26,7 +26,7 @@ WHERE Sueldo >= (SELECT Avg(Sueldo) FROM Empleados /*Me devuelve los empleados c
 ORDER BY sueldo; /*Aqui le digo que me ordene los sueldos en orden ascendente*/
 ```
 
-## 4. En este mostramos los empleados cuyas ventas no han podido llegar a su objetivo:
+## 4. En este mostramos los empleados cuyas oficinas sus ventas no han podido llegar a su objetivo:
 ```sql
 SELECT codEmpleado,nombre /*Aqui seleccionamos el codigo de empleado y el nombre*/
 FROM empleados
