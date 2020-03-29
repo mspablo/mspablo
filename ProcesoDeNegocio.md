@@ -12,7 +12,7 @@ group by codigoEmpleado;  /* Aqui agrupo a los empleados para que no me aparezca
 ```sql
 SELECT CodOficina, Ciudad, Objetivo  /*Aqui seleccionamos el codigo de oficina la ciudad y objetivo*/
 FROM Oficinas  
- WHERE Objetivo > (SELECT sum(Sueldo)*0.50 AS S1  /*Aqui digo que me liste cuyo el 50% del sueldo sea mayor que el objetivo*/
+ WHERE Objetivo > (SELECT sum(Sueldo)*0.50 AS S1  /*Aqui digo que me liste el objetivo de las oficinas que sean mayor al 50% de la suma del sueldo de los empleados*/
  FROM Empleados 
  WHERE Empleados.Oficina = Oficinas.CodOficina);
 ```
